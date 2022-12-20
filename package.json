@@ -3,9 +3,14 @@
   "description": "",
   "version": "0.1.0",
   "dependencies": {
-    "serverless-pseudo-parameters": "^1.2.5"
+    "serverless": "^3.25.1",
+    "serverless-offline": "^12.0.3",
+    "serverless-pseudo-parameters": "^1.2.5",
+    "serverless-step-functions": "^3.11.1",
+    "serverless-step-functions-local": "^0.4.0"
   },
-  "devDependencies": {
-    "serverless-step-functions": "^1.2.0"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sls offline start --stage local --param=\"pwd=$(pwd)\" --verbose"
   }
 }
